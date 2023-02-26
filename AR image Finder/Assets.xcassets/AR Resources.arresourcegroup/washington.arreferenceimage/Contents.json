@@ -1,0 +1,16 @@
+{
+  "images" : [
+    {
+      "filename" : "washington.jpeg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  },
+  "properties" : {
+    "unit" : "centimeters",
+    "width" : 5.3529316770186339
+  }
+}
