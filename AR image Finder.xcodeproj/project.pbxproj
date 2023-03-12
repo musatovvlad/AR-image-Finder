@@ -55,12 +55,12 @@
 		F54DE76329ABE66A000636ED /* AR image Finder */ = {
 			isa = PBXGroup;
 			children = (
-				F54DE77A29ABF192000636ED /* Assets.xcassets */,
 				F54DE76429ABE66A000636ED /* AppDelegate.swift */,
 				F54DE76629ABE66A000636ED /* art.scnassets */,
-				F54DE76829ABE66A000636ED /* ViewController.swift */,
-				F54DE76A29ABE66A000636ED /* Main.storyboard */,
+				F54DE77A29ABF192000636ED /* Assets.xcassets */,
 				F54DE76F29ABE66C000636ED /* LaunchScreen.storyboard */,
+				F54DE76A29ABE66A000636ED /* Main.storyboard */,
+				F54DE76829ABE66A000636ED /* ViewController.swift */,
 			);
 			path = "AR image Finder";
 			sourceTree = "<group>";

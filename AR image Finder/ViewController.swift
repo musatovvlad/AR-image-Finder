@@ -5,13 +5,21 @@
 //  Created by Vladimir on 26.02.2023.
 //
 
-import UIKit
-import SceneKit
+
+
 import ARKit
 
 class ViewController: UIViewController, ARSCNViewDelegate {
 
     @IBOutlet var sceneView: ARSCNView!
+    
+    let videoPlayer: AVPlayer = {
+        let url = Bundle.main.url(forResource: "video",
+                                  withExtension: "mp4",
+                                  subdirectory: "art.scnassets")!
+        return AVPlayer(url: url)
+    }()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -73,7 +81,14 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         let width = image.name == "washington" ? 15.5956/5.1 * size.width :
         15.5956 / 5.4 * size.width
         let plane = SCNPlane(width:width, height:height)
-        plane.firstMaterial?.diffuse.contents = image.name == "washington" ? UIImage(named: "Franklin") : UIImage(named: "Independence")
+        plane.firstMaterial?.diffuse.contents = image.name == "washington" ?
+        UIImage(named: "Franklin") :
+        videoPlayer
+       // UIImage(named: "Independence")
+        
+        if image.name == "washington"{
+            videoPlayer.play()
+        }
         
         // create plane node
         let planeNode = SCNNode(geometry: plane)
@@ -83,6 +98,15 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         //move plane
         planeNode.position.x += image.name == "washington" ? -0.001 : 0.001
         planeNode.position.z += image.name == "washington" ? -0.001 : 0
+        
+      //run animation
+        planeNode.runAction(
+            .sequence([
+                .wait(duration: 10),
+                .fadeOut(duration: 3),
+                .removeFromParentNode(),
+            ])
+        )
         
         //add plane node to the given node
         node.addChildNode(planeNode)
