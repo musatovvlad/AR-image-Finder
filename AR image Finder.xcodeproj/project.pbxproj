@@ -13,6 +13,8 @@
 		F54DE76C29ABE66A000636ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F54DE76A29ABE66A000636ED /* Main.storyboard */; };
 		F54DE77129ABE66C000636ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F54DE76F29ABE66C000636ED /* LaunchScreen.storyboard */; };
 		F54DE77B29ABF192000636ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F54DE77A29ABF192000636ED /* Assets.xcassets */; };
+		F5879EFB29BE510E00B696A1 /* screenshot01.png in Resources */ = {isa = PBXBuildFile; fileRef = F5879EF929BE510E00B696A1 /* screenshot01.png */; };
+		F5879EFC29BE510E00B696A1 /* screenshot02.png in Resources */ = {isa = PBXBuildFile; fileRef = F5879EFA29BE510E00B696A1 /* screenshot02.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		F54DE76B29ABE66A000636ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F54DE77029ABE66C000636ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F54DE77A29ABF192000636ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F5879EF929BE510E00B696A1 /* screenshot01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screenshot01.png; sourceTree = "<group>"; };
+		F5879EFA29BE510E00B696A1 /* screenshot02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screenshot02.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,9 +64,19 @@
 				F54DE77A29ABF192000636ED /* Assets.xcassets */,
 				F54DE76F29ABE66C000636ED /* LaunchScreen.storyboard */,
 				F54DE76A29ABE66A000636ED /* Main.storyboard */,
+				F5879EFD29BE513000B696A1 /* screenshots */,
 				F54DE76829ABE66A000636ED /* ViewController.swift */,
 			);
 			path = "AR image Finder";
+			sourceTree = "<group>";
+		};
+		F5879EFD29BE513000B696A1 /* screenshots */ = {
+			isa = PBXGroup;
+			children = (
+				F5879EF929BE510E00B696A1 /* screenshot01.png */,
+				F5879EFA29BE510E00B696A1 /* screenshot02.png */,
+			);
+			path = screenshots;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +140,8 @@
 				F54DE76729ABE66A000636ED /* art.scnassets in Resources */,
 				F54DE77129ABE66C000636ED /* LaunchScreen.storyboard in Resources */,
 				F54DE77B29ABF192000636ED /* Assets.xcassets in Resources */,
+				F5879EFC29BE510E00B696A1 /* screenshot02.png in Resources */,
+				F5879EFB29BE510E00B696A1 /* screenshot01.png in Resources */,
 				F54DE76C29ABE66A000636ED /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
